@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c7061253dae93564b93c80db98b81482
+timeCreated: 1519137293
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: F4aAgent
+  fontNames:
+  - F4aAgent
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

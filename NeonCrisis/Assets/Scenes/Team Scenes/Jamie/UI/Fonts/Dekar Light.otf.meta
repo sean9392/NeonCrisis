@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 107c187f408546a4f9c37bc2b11b0d0d
+timeCreated: 1519137292
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dekar Light
+  fontNames:
+  - Dekar Light
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ba8d44046f3175645a54c23c0af4bbda, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

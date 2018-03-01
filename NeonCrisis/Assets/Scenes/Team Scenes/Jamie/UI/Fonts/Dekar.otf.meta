@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d9e3a349c61e4584393d7dda7acfe482
+timeCreated: 1519137293
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dekar
+  fontNames:
+  - Dekar
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 730ac852a99761944a8f4a1255f59e6c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

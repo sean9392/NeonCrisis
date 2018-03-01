@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Space_Shader
+  m_Shader: {fileID: 4800000, guid: dd84306c57732004ab2526bbf55e1036, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _FractalLayer1OffsetXFloat: 0.08
+    - _FractalLayer1OffsetYFloat: -0.89
+<<<<<<< HEAD
+<<<<<<< HEAD
+    - _FractalLayer1ScaleFloat: 2.12
+    - _FractalLayer1Strength: 1.1
+    - _FractalLayer1TimeScale: 1.8
+    - _FractalLayer2OffsetXFloat: -0.25
+    - _FractalLayer2OffsetYFloat: -1.82
+    - _FractalLayer2ScaleFloat: -1.73
+    - _FractalLayer2Strength: 2.66
+    - _FractalLayer2TimeScale: 2.6
+=======
+=======
+>>>>>>> f4560cef837de0d97428f6aa88ad7b1d92fb49d8
+    - _FractalLayer1ScaleFloat: 3.94
+<<<<<<< HEAD
+    - _FractalLayer1Strength: 0.26
+    - _FractalLayer1TimeScale: 1.86
+    - _FractalLayer2OffsetXFloat: 0
+    - _FractalLayer2OffsetYFloat: -0.5
+    - _FractalLayer2ScaleFloat: 0.28
+    - _FractalLayer2Strength: 0.53
+=======
+    - _FractalLayer1Strength: 1.1
+    - _FractalLayer1TimeScale: 0.98
+    - _FractalLayer2OffsetXFloat: -0.25
+    - _FractalLayer2OffsetYFloat: -1.82
+    - _FractalLayer2ScaleFloat: 0.28
+    - _FractalLayer2Strength: 3.03
+>>>>>>> fea7ffa0d19245498d40eda9c808bd820b1313f2
+    - _FractalLayer2TimeScale: 0.09
+<<<<<<< HEAD
+>>>>>>> f4560cef837de0d97428f6aa88ad7b1d92fb49d8
+=======
+>>>>>>> f4560cef837de0d97428f6aa88ad7b1d92fb49d8
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _MainTexPanningSpeed: 1
+<<<<<<< HEAD
+<<<<<<< HEAD
+    - _MainTexStrength: 279.6
+=======
+    - _MainTexStrength: 623.68
+>>>>>>> f4560cef837de0d97428f6aa88ad7b1d92fb49d8
+=======
+    - _MainTexStrength: 623.68
+>>>>>>> f4560cef837de0d97428f6aa88ad7b1d92fb49d8
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+<<<<<<< HEAD
+    - _StarfieldBlendStrength: 2.61
+    - _StarfieldExp: 5000
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    - _StarfieldBlendStrength: 1.11
+    - _StarfieldExp: 7882
+    - _StarfieldXDirection: 50.1
+    - _StarfieldYDirection: 5.5
+=======
+=======
+>>>>>>> f4560cef837de0d97428f6aa88ad7b1d92fb49d8
+    - _StarfieldBlendStrength: 0.66
+    - _StarfieldExp: 4998.2
+>>>>>>> fea7ffa0d19245498d40eda9c808bd820b1313f2
+    - _StarfieldXDirection: 50.54
+    - _StarfieldYDirection: -5.9
+<<<<<<< HEAD
+>>>>>>> f4560cef837de0d97428f6aa88ad7b1d92fb49d8
+=======
+>>>>>>> f4560cef837de0d97428f6aa88ad7b1d92fb49d8
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< HEAD
+    - _ColorTintLayer1: {r: 0.6022192, g: 0.57439446, b: 0.9411765, a: 1}
+    - _ColorTintLayer2: {r: 0.28494817, g: 0.85294116, b: 0.23832181, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _StarfieldColor: {r: 0.7647059, g: 0.17993079, b: 0.17993079, a: 1}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    - _ColorTintLayer1: {r: 0.27205884, g: 0.06401384, b: 0.06401384, a: 1}
+    - _ColorTintLayer2: {r: 0.022565918, g: 0, b: 0.03676468, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _StarfieldColor: {r: 1, g: 1, b: 1, a: 1}
+=======
+=======
+>>>>>>> f4560cef837de0d97428f6aa88ad7b1d92fb49d8
+    - _ColorTintLayer1: {r: 0.60499495, g: 0.5900736, b: 0.78676474, a: 1}
+    - _ColorTintLayer2: {r: 0.3677739, g: 0.75, b: 0.33639705, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _StarfieldColor: {r: 0.74264705, g: 0.4226912, b: 0.34948096, a: 1}
+<<<<<<< HEAD
+>>>>>>> f4560cef837de0d97428f6aa88ad7b1d92fb49d8
+=======
+>>>>>>> f4560cef837de0d97428f6aa88ad7b1d92fb49d8
+>>>>>>> fea7ffa0d19245498d40eda9c808bd820b1313f2
