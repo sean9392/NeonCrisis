@@ -8,7 +8,7 @@ Shader "Custom/Shield"
 		_Color("Color Tint", Color) = (0.0,1.0,0.0,1.0)
 		_Inside("Inside", Range(0.0,2.0)) = 0.0
 		_Rim("Rim", Range(0.0,1.0)) = 1.2
-		_MainTex("Texture", 2D) = "white" {}
+		_Texture("Texture", 2D) = "white" {}
 		_Speed("Speed", Range(0.5,5.0)) = 0.5
 		_Tile("Tile", Range(1.0,10.0)) = 5.0
 		_Strength("Strength", Range(0.0,5.0)) = 1.5
@@ -71,18 +71,30 @@ Shader "Custom/Shield"
 
 	inline half4 LightingBlinnPhongEditor(EditorSurfaceOutput s, half3 lightDir, half3 viewDir, half atten)
 	{
-		viewDir = normalize(viewDir);
-		half3 h = normalize(lightDir + viewDir);
 
-		half diff = max(0, dot(s.Normal, lightDir));
+		
+		half3 h = lightDir + (viewDir*0);
 
+
+
+		/*
+			viewDir = normalize(viewDir);
+			half3 h = normalize(lightDir + viewDir);
+		*/
+
+		float diff = max(0, dot(s.Normal, lightDir));
+		
 		float nh = max(0, dot(s.Normal, h));
-		float3 spec = pow(nh, s.Specular*128.0) * s.Gloss;
+
+		
+		float3 spec = pow(nh, s.Specular*128.0)  * s.Gloss;
 
 		half4 res;
 		res.rgb = _LightColor0.rgb * (diff * atten * 2.0);
 		res.w = spec * Luminance(_LightColor0.rgb);
 
+
+		
 		return LightingBlinnPhongEditor_PrePass(s, res);
 	}
 
@@ -103,15 +115,16 @@ Shader "Custom/Shield"
 	void surf(Input IN, inout EditorSurfaceOutput o)
 	{
 		o.Albedo = fixed3(0.0,0.0,0.0);
-		o.Normal = fixed3(0.0,0.0,1.0);
-		o.Emission = 0.0;
-		o.Gloss = 0.0;
-		o.Specular = 0.0;
+		o.Normal = fixed3(0.0,0.0,1);
+
+		//o.Emission = 0.0;
+		//o.Gloss = 0.0;
+		//o.Specular = 0.0;
 		o.Alpha = 1.0;
-		float4 ScreenDepthDiff0 = LinearEyeDepth(tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(IN.screenPos)).r) - IN.screenPos.z;
+		//float4 ScreenDepthDiff0 = LinearEyeDepth(tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(IN.screenPos)).r) - IN.screenPos.z;
 		float4 Saturate0 = fixed4(0.3,0.3,0.3,1.0);//
 		float4 Fresnel0_1_NoInput = fixed4(0,0,1,1);
-		float dNorm = 1.0 - dot(normalize(float4(IN.viewDir, 1.0).xyz), normalize(Fresnel0_1_NoInput.xyz));
+		float dNorm = 1 - dot(normalize(float4(IN.viewDir, 1.0).xyz), normalize(Fresnel0_1_NoInput.xyz));
 		float4 Fresnel0 = float4(dNorm,dNorm,dNorm,dNorm);
 		float4 Step0 = step(Fresnel0,float4(1.0, 1.0, 1.0, 1.0));
 		float4 Clamp0 = clamp(Step0,_Inside.xxxx,float4(1.0, 1.0, 1.0, 1.0));
